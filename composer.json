@@ -1,5 +1,5 @@
 {
-    "name": "jamestowers/icalreader",
+    "name": "timegridio/icalreader",
     "type": "library",
     "description": "iCal reader wrapper for Laravel 5",
     "keywords": [
