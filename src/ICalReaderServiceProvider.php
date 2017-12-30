@@ -25,8 +25,11 @@ class ICalReaderServiceProvider extends ServiceProvider
 
     private function registerICal()
     {
-        $this->app->bind('ical', function ($app) {
+        $this->app->bind('icalevents', function ($app) {
             return new ICalEvents($app);
+        });
+        $this->app->bind('ical', function ($app) {
+            return new ICal($app);
         });
     }
 }
